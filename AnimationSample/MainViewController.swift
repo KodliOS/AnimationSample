@@ -30,11 +30,11 @@ final class MainViewController: UIViewController {
 
 extension MainViewController: MainViewDelegate {
     func mainView(_ mainView: MainView, didTapSendMessageButton button: UIButton, text textField: UITextField) {
-        print("-> listened: didTapClickMeButton")
+        print("-> listened: didTapSendMessageButton")
         message.send(textField.text!, type: .success)
     }
     
     func mainView(_ mainView: MainView, didTapClickMeButton button: UIButton) {
-        print("-> listened: didTapSendMessageButton")
+        print("-> listened: didTapClickMeButton")
     }    
 }

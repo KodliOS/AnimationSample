@@ -109,7 +109,7 @@ final class FormView: UIView {
     }
     
     private struct Layout {
-        var bounds: CGRect
+        private var bounds: CGRect
         lazy var gridHeight = containerViewFrame.height / 7
         init(bounds: CGRect) { self.bounds = bounds }
         lazy var containerViewFrame = CGRect(x: 0, y: 0, width: self.bounds.width, height: self.bounds.height)
